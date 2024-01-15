@@ -38,6 +38,8 @@ main {
     max-width: 19rem;
     min-height: 36rem;
     overflow: hidden;
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 #imagem {

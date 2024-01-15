@@ -10,12 +10,12 @@
         flex-direction: row-reverse;
         min-height: 23rem;
         max-height: 23rem;
-        max-width: 55rem;
+        max-width: 80vw;
     }
 
     #imagem {
         height: 23rem;
-        width: 35rem;
+        width: 25rem;
     }
 
     #formulario p {
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 768px) {
     #login {
-        max-width: 90vw;
+        max-width: 80vw;
     }
 }
 
@@ -42,6 +42,7 @@
 
     #imagem {
         height: 25rem;
+        width: 35rem;
     }
 
     #formulario p {
