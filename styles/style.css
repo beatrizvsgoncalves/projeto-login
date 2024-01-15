@@ -1,13 +1,100 @@
 @charset "UTF-8";
 
-/* 
-Paleta de cores
+/* background: linear-gradient(0deg, rgb(248, 199, 94) 0%, rgb(105, 170, 255) 50%) no-repeat; */
 
-Azul
-Laranja
+:root {
+    --cor-azul: rgb(105, 170, 255);
+    --cor-laranja: rgb(248, 199, 94);
+}
 
-background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(44,50,108,1) 50%);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-*/
+body {
+    background-color: rgb(185, 215, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+}
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    background-color: #fff;
+    border-radius: .7rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    height: 36.3rem;
+    margin: auto;
+    max-width: 15.6rem;
+    overflow: hidden;
+}
+
+#imagem {
+    background: rgb(248, 199, 94) url('../images/pexels-adrian-cuj-2457096.jpg') center / cover no-repeat;
+    display: block;
+    height: 15rem;
+    width: 100%;
+}
+
+#formulario {
+    display: block;
+    padding: .8rem;
+}
+
+#formulario h1 {
+    margin: .6rem;
+    text-align: center;
+}
+
+#formulario p {
+    margin: .7rem 0;
+}
+
+.dados > input {
+    width: 85%;
+}
+
+.dados > label > i {
+    color: #fff;
+}
+
+.inputs > input {
+    background-color: rgba(248, 199, 94, 0.582);
+    border: none;
+    border-radius: .3rem;
+}
+
+.inputs {
+    background-color: var(--cor-azul);
+    border-radius: .3rem;
+    padding: .5rem;
+    margin-bottom: .4rem;
+    width: 100%;
+}
+
+#entrar {
+    background-color:rgb(240, 191, 87);
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+#esqueci {
+    border: 2px solid var(--cor-laranja);
+    border-radius: .3rem;
+    color: rgb(138, 111, 53);
+    font-size: 1em;
+    margin-bottom: .8rem;
+    padding: .5rem;
+    width: 100%;
+}

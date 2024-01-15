@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="imagem">
-                Foto
-            </div>
+            <div id="imagem"></div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post">
-                    
+                    <div class="dados inputs">
+                        <label for="iusuario">
+                            <i class="fi fi-ss-user"></i>
+                        </label>
+                        <input type="text" name="usuario" id="iusuario" placeholder="Seu e-mail">
+                    </div>
+                    <div class="dados inputs">
+                        <label for="isenha">
+                            <i class="fi fi-ss-key"></i>
+                        </label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar" id="entrar" class="inputs">
+                        <input type="button" value="Esqueci a senha" id="esqueci">
+                    </div>
                 </form>
             </div>
         </section>
