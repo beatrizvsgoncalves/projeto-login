@@ -17,9 +17,13 @@
         min-height: 100vh;
         min-width: 100vw;
     }
-
+    
     #imagem {
         border-radius: 0;
+    }
+    
+    #formulario {
+        padding: 0 3rem;
     }
 }
 
@@ -69,7 +73,6 @@
     }
 
     #imagem {
-        height: 25rem;
         width: 35rem;
     }
 
