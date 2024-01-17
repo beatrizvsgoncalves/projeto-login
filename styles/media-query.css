@@ -12,6 +12,17 @@
     }
 }
 
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    #login {
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    #imagem {
+        border-radius: 0;
+    }
+}
+
 @media screen and (min-width: 768px) {
     body {
         background: linear-gradient(0deg, rgb(248, 199, 94) 0%, rgb(105, 170, 255) 50%) no-repeat;
