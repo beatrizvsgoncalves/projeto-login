@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media-query.css">
@@ -16,22 +16,28 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    <div class="dados inputs">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo inputs">
                         <label for="iusuario">
-                            <i class="fi fi-ss-user"></i>
+                            <span class="material-icons">
+                                person
+                            </span>
                         </label>
-                        <input type="text" name="usuario" id="iusuario" placeholder="Seu e-mail">
+                        <input type="email" name="usuario" id="iusuario" placeholder="Seu e-mail" autocomplete="email" required maxlength="50">
                     </div>
-                    <div class="dados inputs">
+                    <div class="campo inputs">
                         <label for="isenha">
-                            <i class="fi fi-ss-key"></i>
+                            <span class="material-icons">
+                                key
+                            </span>
                         </label>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="30">
                     </div>
                     <div>
                         <input type="submit" value="Entrar" id="entrar" class="inputs">
-                        <a href="esqueci.html" target="_blank" id="esqueci" class="inputs">Esqueci a senha</a>
+                        <a href="esqueci.html" target="_blank" id="esqueci" class="inputs">Esqueci a senha  <span class="material-icons">
+                            email
+                        </span></a>
                     </div>
                 </form>
             </div>

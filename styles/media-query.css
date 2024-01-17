@@ -18,6 +18,10 @@
         width: 25rem;
     }
 
+    #formulario {
+        padding: 1.2rem;
+    }
+
     #formulario p {
         margin-bottom: 1.2rem;
     }
@@ -31,18 +35,24 @@
     #login {
         max-width: 80vw;
     }
+
+    .campo > label {
+        width: 10%;
+    }
+
+    .campo > input {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 992px) {
-    #login {
-        flex-direction: row;
-        max-height: 25rem;
-        min-height: 25rem;
-    }
-
     #imagem {
         height: 25rem;
         width: 35rem;
+    }
+
+    #formulario {
+        padding: 1.5rem;
     }
 
     #formulario p {
@@ -51,5 +61,31 @@
 
     #entrar {
         margin-top: .8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #login {
+        flex-direction: row;
+        max-height: 25rem;
+        min-height: 25rem;
+    }
+
+    #formulario {
+        padding: 2rem;
+    }
+
+    #formulario h1 {
+        font-size: 2em;        
+        margin-top: -.4rem;
+    }
+
+    #formulario p {
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+    }
+
+    #entrar, #esqueci    {
+        font-size: 1.1em;
     }
 }

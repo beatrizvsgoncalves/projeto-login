@@ -25,8 +25,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
     height: 100vh;
+    padding: 1rem 0;
     width: 100vw;
 }
 
@@ -51,7 +51,7 @@ main {
 
 #formulario {
     display: block;
-    padding: .8rem;
+    padding: 1rem;
 }
 
 #formulario h1 {
@@ -60,42 +60,56 @@ main {
 }
 
 #formulario p {
-    margin: .7rem 0;
+    margin: .8rem 0;
 }
 
-.dados {
+.campo {
     background-color: var(--cor-azul);
     border: 2px solid var(--cor-azul);
-}
-
-.dados > input {
-    border: none;
     border-radius: .3rem;
-    height: 100%;
-    width: 85%;
-}
 
-.dados > label > i {
-    color: #fff;
-    padding: .5rem;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-input {
-    padding: .7rem;
-}
-
-.inputs {
-    border-radius: .3rem;
     margin-bottom: .4rem;
     width: 100%;
 }
-   
+
+.campo > input {
+    border: none;
+    border-radius: .3rem;
+    width: 85%;
+    padding: .7rem;
+}
+
+.campo > label {
+    text-align: center;
+    width: 15%;
+}
+
+
+.campo > label > span {
+    color: #fff;
+    padding: 0 .4rem;
+}
 
 #entrar {
     background-color:rgb(240, 191, 87);
     border: none;
+    border-radius: .3rem;
     color: #ffffff;
     font-size: 1em;
+    margin-bottom: .4rem;
+    padding: .7rem;
+    width: 100%;
+}
+
+
+#entrar:hover {
+    background-color: rgb(201, 161, 77);
+    cursor: pointer;
 }
 
 #esqueci {
@@ -104,9 +118,17 @@ input {
     color: rgb(138, 111, 53);
     display: block;
     font-size: 1em;
-    margin-bottom: .8rem;
-    padding: .6rem;
+    margin-bottom: .5rem;
+    padding: .5rem;
     text-align: center;
     text-decoration: none;
     width: 100%;
+}
+
+#esqueci:hover {
+    text-decoration: underline;
+}
+
+#esqueci span {
+    font-size: .9rem;
 }
